@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>جائزة الاالولو الوهمية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            margin: auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #c00;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .fake-link {
+            display: inline-block;
+            margin: 15px 0;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #warningMessage {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffdddd;
+            border: 1px solid #ffaaaa;
+            border-radius: 5px;
+        }
+        #warningMessage h2 {
+            color: #900;
+            margin-top: 0;
+        }
+        .tips {
+            list-style-type: square;
+            margin: 10px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>مبروك! لقد فزت بجائزة من اللولوا</h1>
+    <p>
+        تهانينا! تم اختيارك عشوائيًا للفوز بقسيمة شرائية بقيمة 100 ريال من شركة اللولوا.  
+        للحصول على جائزتك، اضغط على الرابط أدناه:
+    </p>
+
+    <!-- رابط وهمي يحتوي على اسم اللولو -->
+    <span class="fake-link" onclick="showWarning()">www.Lulu-Prize.com</span>
+
+    <!-- رسالة التحذير التي تظهر بعد النقر على الرابط الوهمي -->
+    <div id="warningMessage">
+        <h2>لقد تم خداعك!</h2>
+        <p>
+            هذا موقع وهمي أعددته فقط لغرض التوعية في واجب مادة تطوير الويب.  
+            لو كنت مخترقًا (هاكر) حقيقيًا، لكان بإمكاني سرقة بياناتك أو اختراق جهازك!
+        </p>
+        <p>
+            <strong>نصائح للحماية الإلكترونية:</strong>
+        </p>
+        <ul class="tips">
+            <li>تأكد دائمًا من صحة الروابط قبل النقر عليها، وابحث عن المصدر الرسمي.</li>
+            <li>لا تثق بالروابط التي تدّعي وجود جوائز من دون أدلة موثوقة.</li>
+            <li>قم بتحديث برامج الحماية على جهازك باستمرار.</li>
+            <li>لا تشارك معلوماتك الشخصية أو البنكية في مواقع غير موثوقة.</li>
+            <li>في حال الشك، قم بزيارة الموقع الرسمي لـ <strong>للجهة مذكوره في رابط  للتأكد من صحته</strong> </li>
+        </ul>
+        <p>
+            تذكّر دائمًا: <strong>السلامة الرقمية تبدأ من وعيك أنت!</strong>
+        </p>
+    </div>
+</div>
+
+<script>
+function showWarning() {
+    document.getElementById("warningMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
